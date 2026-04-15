@@ -1,0 +1,46 @@
+# ============================================================
+# Voice AI Agent — Python Dependencies
+# ============================================================
+# Install all:  pip install -r requirements.txt
+# Minimum Python version: 3.9+
+# ============================================================
+
+# ── Core Framework ────────────────────────────────────────
+streamlit>=1.35.0          # UI framework
+
+# ── STT: Local Whisper ────────────────────────────────────
+openai-whisper>=20231117   # Local Whisper model
+# Whisper requires ffmpeg installed on the system:
+#   Ubuntu/Debian: sudo apt install ffmpeg
+#   macOS:         brew install ffmpeg
+#   Windows:       https://ffmpeg.org/download.html
+
+# ── STT: Audio Processing ─────────────────────────────────
+pydub>=0.25.1              # Audio format conversion (mp3 → wav)
+sounddevice>=0.4.6         # Live microphone recording
+scipy>=1.11.0              # WAV file writing (with sounddevice)
+
+# ── STT: Microphone UI ────────────────────────────────────
+streamlit-audiorec>=0.1.3  # Streamlit mic recorder component
+
+# ── LLM: Ollama (local) ───────────────────────────────────
+requests>=2.31.0           # HTTP client for Ollama API calls
+
+# ── LLM + STT: Groq API (cloud fallback) ─────────────────
+groq>=0.9.0                # Groq SDK (STT + LLM)
+
+# ── TTS: Text-to-Speech ───────────────────────────────────
+pyttsx3>=2.90              # Offline TTS (cross-platform)
+gTTS>=2.4.0                # Google TTS (online, higher quality)
+
+# ── Utilities ─────────────────────────────────────────────
+python-dotenv>=1.0.0       # Load .env file for API keys
+
+# ── Testing ───────────────────────────────────────────────
+pytest>=8.0.0
+pytest-mock>=3.12.0
+
+# ── Optional: Torch (needed by Whisper for GPU acceleration)
+# Uncomment and adjust for your platform:
+# torch>=2.1.0
+# torchaudio>=2.1.0

@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env
+
+# Environment config (keep .env.example)
+.env
+
+# Project output & logs (generated at runtime)
+output/
+logs/
+
+# Whisper model cache
+~/.cache/whisper/
+
+# Pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temp audio files
+*.tmp.wav
+*.tmp.mp3
+
+# Audio files
+*.wav
+*.mp3
+*.ogg
+
+# OS files
+.DS_Store
+Thumbs.db
