@@ -23,6 +23,10 @@ Audio ──► STT ──► LLM Intent ──► Tool Dispatch ──► Outpu
 
 ---
 
+## 🎥 Demo Video
+
+https://github.com/ARYISTA/Voice-Controlled-AI-AGENT/blob/main/VoiceAgent_DEMO.mp4
+
 ## 📁 Project Structure
 
 ```
